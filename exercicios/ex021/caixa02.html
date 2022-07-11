@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            background-size: auto;
+            border-radius: 2px;
+        }
+        
+        main {
+            background-color: white;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 3px;
+            border-radius: 10px;
+        }
+        
+        article > aside {
+            background-color: rgb(186, 186, 186);
+            width: 210px;
+            padding: 0px 5px 0px 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin-top: 2px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Carros</a>
+            <a href="#">Motos</a>
+            <a href="#">Caminhões</a>
+            <a href="#">Lanchas</a>
+            <a href="#">Quadriciclos</a>
+        </nav>
+    </header>
+    <main>
+    <section id="assuntos">
+
+    </section>
+    <section id="noticias">
+        <article>
+            <h2>Noticias sobre o Brasil</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt soluta nobis quibusdam rerum nihil consectetur eum, ex ipsam qui suscipit quam expedita doloribus quidem voluptatum sint labore illum error inventore.</p>
+            <aside>
+                <p>Artigo escrito por Victor Hugo</p>
+            </aside>
+        </article>
+    </section>
+    </main> 
+    <footer>
+        <p>Desenvoldido por Jurubebs</p>
+    </footer>
+</body>
+</html>
