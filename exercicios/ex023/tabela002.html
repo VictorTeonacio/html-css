@@ -11,18 +11,23 @@
         }
 
         table {
-            width: 500px;
+            width: 400px;
             border-collapse: collapse;
-        }
+         }
 
         th, td {
             border: 1px solid black;
-            padding: 10px;
-            text-align: center;
+            padding: 5px;
+            
+            
         }
-        thead {
+        thead, tfoot {
             background-color: grey;
             color: white;
+        }
+
+        .num {
+            text-align: right;
         }
     </style>
 </head>
@@ -31,21 +36,41 @@
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th>Unidade federativa</th>
+                <th>População (2021)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>123.132.3124</td>
+                <td class="num">46.649.132</td>
             </tr>
             <tr>
                 <td>Minas gerais</td>
-                <td>3123.123.2341.123</td>
+                <td class="num">21.411.923</td>
+            </tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.463.349</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14985.284</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.597.484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
             </tr>
         </tbody>
-        <tfoot></tfoot>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num">123.573.802</td>
+            </tr>
+    </tfoot>
     </table>
 </body>
 </html>
