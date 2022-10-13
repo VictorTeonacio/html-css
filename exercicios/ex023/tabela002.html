@@ -11,18 +11,36 @@
         }
 
         table {
+        
             width: 400px;
             border-collapse: collapse;
-         }
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.0em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            background-color: rgb(36, 33, 33) ;
+            top: -1px;
+        }
 
         th, td {
             border: 1px solid black;
-            padding: 5px;
-            
-            
+            padding: 5px;   
         }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+
         thead, tfoot {
-            background-color: grey;
+            background-color: rgb(36, 33, 33);
             color: white;
         }
 
@@ -32,12 +50,13 @@
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
+    <h1>Uso de Tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Unidade federativa</th>
-                <th>População (2021)</th>
+                <th scope="col">Unidade federativa</th>
+                <th scope="col">População (2021)</th>
             </tr>
         </thead>
         <tbody>
@@ -64,11 +83,92 @@
                 <td>Rio Grande do Sul</td>
                 <td class="num">11.466.630</td>
             </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Recife</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td class="num">123.573.802</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>123.573.802</strong></td>
             </tr>
     </tfoot>
     </table>
