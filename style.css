@@ -1,0 +1,29 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    text-align: center;
+    display: inline;
+
+}
+
+
+nav ul li {
+    text-align: right;
+}
+
+nav ul img {
+   height: 75px;
+   text-align: left;
+}
+
+main > img {
+    height:200px;
+    width: 150px;
+    margin: 20px;
+    border: 1px solid rgba(153, 152, 152, 0.786);
+    padding: 10px;
+    border-radius: 75px;
+}
