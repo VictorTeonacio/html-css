@@ -4,19 +4,26 @@
 }
 
 nav {
+    margin: 20px;
     text-align: center;
-    display: inline;
-
+    background-color: lightgrey;
 }
 
-
-nav ul li {
+nav ul {
     text-align: right;
+    padding: 20px;
+}
+nav ul li {
+    display: inline-block;
+    text-align: right;
+    list-style-type: none;
+    background-color: grey;
+    margin: 10px 5px 10px 5px;
 }
 
-nav ul img {
-   height: 75px;
-   text-align: left;
+nav > img {
+   height: 100px;
+   
 }
 
 main > img {
